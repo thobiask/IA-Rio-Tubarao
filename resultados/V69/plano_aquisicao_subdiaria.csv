@@ -1,0 +1,11 @@
+estacao_codigo,rotulo_local,episodio,inicio,fim,fonte_prioritaria,inventario_oficial_verificado,serie_subdiaria_disponivel,timestamps_com_fuso,tipo_observacao,unidade_e_datum,arquivo_obtido,responsavel,observacoes
+84249998,Orleans — Montante,maio_2022,2022-04-27,2022-05-12,ANA HidroWebService / inventário oficial,NÃO,NÃO VERIFICADO,PENDENTE,PENDENTE,PENDENTE,,,
+84249998,Orleans — Montante,outubro_2023,2023-10-01,2023-10-25,ANA HidroWebService / inventário oficial,NÃO,NÃO VERIFICADO,PENDENTE,PENDENTE,PENDENTE,,,
+84300000,Pedras Grandes,maio_2022,2022-04-27,2022-05-12,ANA HidroWebService / inventário oficial,NÃO,NÃO VERIFICADO,PENDENTE,PENDENTE,PENDENTE,,,
+84300000,Pedras Grandes,outubro_2023,2023-10-01,2023-10-25,ANA HidroWebService / inventário oficial,NÃO,NÃO VERIFICADO,PENDENTE,PENDENTE,PENDENTE,,,
+84559800,Braço do Norte,maio_2022,2022-04-27,2022-05-12,ANA HidroWebService / inventário oficial,NÃO,NÃO VERIFICADO,PENDENTE,PENDENTE,PENDENTE,,,
+84559800,Braço do Norte,outubro_2023,2023-10-01,2023-10-25,ANA HidroWebService / inventário oficial,NÃO,NÃO VERIFICADO,PENDENTE,PENDENTE,PENDENTE,,,
+84560000,São Ludgero,maio_2022,2022-04-27,2022-05-12,ANA HidroWebService / inventário oficial,NÃO,NÃO VERIFICADO,PENDENTE,PENDENTE,PENDENTE,,,
+84560000,São Ludgero,outubro_2023,2023-10-01,2023-10-25,ANA HidroWebService / inventário oficial,NÃO,NÃO VERIFICADO,PENDENTE,PENDENTE,PENDENTE,,,
+84580000,Tubarão — Rio do Pouso,maio_2022,2022-04-27,2022-05-12,ANA HidroWebService / inventário oficial,NÃO,NÃO VERIFICADO,PENDENTE,PENDENTE,PENDENTE,,,
+84580000,Tubarão — Rio do Pouso,outubro_2023,2023-10-01,2023-10-25,ANA HidroWebService / inventário oficial,NÃO,NÃO VERIFICADO,PENDENTE,PENDENTE,PENDENTE,,,

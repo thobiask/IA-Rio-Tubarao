@@ -1,0 +1,6 @@
+{
+  "base": "base_ia_hidrologia_chuvas_3_estacoes.csv",
+  "sha256": "89d8c4a7a930eef922b71825384fefbf19d0c923a5c9c249bb147f36600be0e8",
+  "fonte_auditoria_anterior": "Rio_Tubarao_V68_auditoria_eventos/RELATORIO_V68.md",
+  "natureza": "diagnostico local; sem coleta externa; sem treinamento"
+}

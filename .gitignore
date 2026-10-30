@@ -1,0 +1,16 @@
+# Segredos e credenciais
+.env
+.env.*
+!.env.example
+*.pem
+*.key
+*token*
+*credentials*
+__pycache__/
+*.py[cod]
+.ipynb_checkpoints/
+.venv/
+venv/
+.DS_Store
+# Bases brutas ficam fora até revisão
+dados/brutos/

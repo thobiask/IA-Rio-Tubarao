@@ -1,0 +1,7 @@
+cenario,recorte,n,delta_mae_vs_todas_cm,ic95_bootstrap_mensal_inf,ic95_bootstrap_mensal_sup,reamostragens_validas
+B_sem_pedras_grandes,todos,221,0.806,-0.098,2.214,2000
+B_sem_pedras_grandes,subidas_50cm,10,-3.718,-6.932,-1.964,1997
+C_sem_sao_ludgero,todos,221,2.172,1.297,3.025,2000
+C_sem_sao_ludgero,subidas_50cm,10,-5.685,-6.518,-4.005,1998
+D_so_alvo,todos,221,3.773,0.86,8.16,2000
+D_so_alvo,subidas_50cm,10,0.313,-5.836,13.991,2000

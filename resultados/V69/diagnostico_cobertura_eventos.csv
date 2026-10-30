@@ -1,0 +1,11 @@
+episodio,codigo,dias_janela,registros,dias_com_nivel,dias_nivel_estrito,dias_sem_nivel,datas_unicas,timestamp_hora_distinta_na_base,possui_medicao_subdiaria_comprovada
+maio_2022,84249998,16,16,16,16,0,16,1,False
+maio_2022,84300000,16,16,16,9,0,16,1,False
+maio_2022,84559800,16,16,16,16,0,16,1,False
+maio_2022,84560000,16,16,16,10,0,16,1,False
+maio_2022,84580000,16,16,16,11,0,16,1,False
+outubro_2023,84249998,25,0,0,0,25,0,0,False
+outubro_2023,84300000,25,12,12,0,13,12,1,False
+outubro_2023,84559800,25,25,25,25,0,25,1,False
+outubro_2023,84560000,25,0,0,0,25,0,0,False
+outubro_2023,84580000,25,7,7,7,18,7,1,False

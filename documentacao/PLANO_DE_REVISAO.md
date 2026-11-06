@@ -1,24 +1,27 @@
-# Plano de revisão do projeto IA Rio Tubarão
+# Estado da organização e verificações pendentes
 
-## Etapa 1 — organização e proveniência
-- [ ] Conferir inventário, origem, hashes SHA-256 e duplicidades.
-- [ ] Identificar licenças e atribuições exigidas para redistribuir cada base.
-- [ ] Conferir códigos e localização de estações hidrométricas.
-- [ ] Verificar dados pessoais e credenciais.
+## Organização documental concluída
 
-## Etapa 2 — metodologia
-- [ ] Documentar partição temporal: treinamento até 2015; validação 2016–2020; teste 2021–2025, conforme cada experimento.
-- [ ] Distinguir regressão de nível, classificação de elevação e alerta de enchente.
-- [ ] Comparar persistência, Ridge, Random Forest e Gradient Boosting.
-- [ ] Tratar o MLP como estudo exploratório separado.
-- [ ] Auditar disponibilidade e lacunas nos eventos de 2022 e 2023.
+- [x] Publicação das oito bases hidrológicas inventariadas.
+- [x] Publicação dos cinco arquivos históricos complementares de código, relatório e previsões.
+- [x] README principal com apresentação didática do experimento.
+- [x] Guia de navegação e dicionário inicial das variáveis.
+- [x] Atualização dos documentos de estado, importação e reprodutibilidade.
+- [x] Preservação dos scripts e resultados históricos em suas pastas originais.
 
-## Etapa 3 — V69–V73
-- [ ] Conferir scripts, dependências e resultados em ambiente limpo.
-- [ ] Validar comparações pareadas, evitar vazamento temporal e documentar tratamento de dados faltantes.
-- [ ] Avaliar recall, precisão, falsos positivos e antecedência por evento.
-- [ ] Registrar limitações: não há sistema operacional de alerta validado.
+## Verificações científicas e técnicas ainda necessárias
 
-## Etapa 4 — revisão antes da publicação pública
-- [ ] Revisão científica, de licenças e de segurança.
-- [ ] Publicar apenas dados e resultados cuja origem e integridade foram verificadas.
+- [ ] Comparar SHA-256 dos oito CSVs remotos com o inventário local.
+- [ ] Conferir cabeçalhos, separadores, unidades, datas, duplicidades e cobertura.
+- [ ] Verificar origem, licença de redistribuição e metadados oficiais das estações.
+- [ ] Determinar versões exatas de Python e bibliotecas para execução reproduzível.
+- [ ] Adaptar os caminhos absolutos em wrappers ou cópias identificadas.
+- [ ] Executar os modelos em ambiente isolado e comparar métricas e previsões.
+- [ ] Auditar a disponibilidade efetiva das medições na data de emissão.
+- [ ] Revisar episódios críticos de maio de 2022 e outubro de 2023.
+- [ ] Avaliar a robustez das classificações, falsos positivos e erros extremos.
+- [ ] Revisar segurança e direitos de publicação antes de tornar o repositório público.
+
+## Critério de encerramento
+
+A **organização documental** não deve ser confundida com a **validação científica**. O conjunto está navegável e publicado na branch de revisão, mas a reprodução independente e a auditoria integral dos dados continuam pendentes.

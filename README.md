@@ -124,4 +124,4 @@ O desenvolvimento futuro depende principalmente de séries com melhor cobertura 
 | [documentacao](documentacao/) | Metodologia, verificações e limitações |
 | [inventario](inventario/) | Controle dos arquivos e pendências documentais |
 
-Os nomes numéricos de algumas pastas são identificadores internos dos experimentos e foram mantidos para preservar a correspondência entre códigos, resultados e relatórios.
+Para consultar a documentação por assunto, utilize o [guia do repositório](documentacao/GUIA_DO_REPOSITORIO.md) e o [dicionário de dados](documentacao/DICIONARIO_DADOS.md). Os identificadores numéricos das pastas foram preservados para manter a correspondência entre códigos e resultados.

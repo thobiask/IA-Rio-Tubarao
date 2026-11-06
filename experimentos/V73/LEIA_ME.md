@@ -1,37 +1,13 @@
-# Experimento V73 — classificação de elevações diárias
+# Classificação de elevações diárias
 
-Este diretório contém o **script original** `experimento_v73.py`, preservado sem alterações.
+Este experimento investiga a classificação de elevações do nível fluvial de **50 cm** e **100 cm** entre dias consecutivos na estação Rio do Pouso, em Tubarão.
 
-## Entrada
+O script histórico [`experimento_v73.py`](experimento_v73.py) compara regressão logística e HistGradientBoostingClassifier. As entradas incluem níveis recentes da estação principal, diferenças entre medições e dados auxiliares disponíveis. O limiar de classificação é selecionado no conjunto de validação.
 
-O script procura a base em:
+As saídas estão em [`resultados/V73/`](../../resultados/V73/). A [auditoria das previsões](../../documentacao/AUDITORIA_PREVISOES_V73.md) examina as classificações e os falsos positivos.
 
-```python
-SOURCE=Path('/mnt/data/base_tratada_ia_com_metadados.csv')
-```
+No teste retrospectivo de 933 dias, a configuração de regressão logística analisada na auditoria identificou 35 das 55 subidas de pelo menos 50 cm, mas produziu 451 falsos positivos. A precisão de aproximadamente 7,2% não sustenta aplicação operacional.
 
-Para executar fora do ambiente original, é necessário adaptar esse caminho à localização da base validada. A alteração ainda **não foi incorporada ao código histórico**, para preservar a rastreabilidade.
+O script original utiliza o caminho `/mnt/data/base_tratada_ia_com_metadados.csv` e depende principalmente de `numpy`, `pandas` e `scikit-learn`. A versão exata do ambiente e a reexecução independente ainda não foram verificadas.
 
-## Ambiente
-
-Dependências principais: `numpy`, `pandas` e `scikit-learn`. As versões exatas usadas originalmente não foram registradas neste arquivo e ainda precisam ser determinadas; portanto, `requirements.txt` não constitui um lockfile reprodutível.
-
-## Método
-
-- Alvo: nível no dia seguinte na estação 84580000 (Rio do Pouso).
-- Preditores: níveis e variações do alvo e níveis disponíveis de quatro estações auxiliares.
-- Separação temporal: treino até 2015, validação 2016–2020, teste 2021–2025.
-- Limiares de elevação: 50 e 100 cm.
-- Modelos: regressão logística e HistGradientBoosting.
-- Seleção de limiar de decisão somente na validação.
-
-## Limitações
-
-Os dados são diários; não está confirmada a disponibilidade operacional de cada observação na hora da emissão. As elevações não representam necessariamente enchentes. Os resultados publicados são retrospectivos e não habilitam alertas reais.
-
-## Estado de publicação
-
-- [x] Script original publicado e hash Git comparado com o pacote local.
-- [x] CSV de métricas e limiares publicado e hashes conferidos.
-- [ ] Base de entrada publicada e licença auditada.
-- [ ] Reexecução independente validada.
+Subidas diárias de nível não são sinônimo de inundação ou de alerta oficial.

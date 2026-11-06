@@ -1,0 +1,13 @@
+limiar_subida_cm,modelo,regra,limiar_probabilidade,n_teste,eventos_teste,taxa_base,average_precision,tp,fp,fn,tn,precisao,recall,f1,f2,alertas
+50,regressao_logistica,fixo_050,0.5,933,55,0.0589,0.0905,19,131,36,747,0.1267,0.3455,0.1854,0.2568,150
+50,regressao_logistica,ajustado_validacao,0.35,933,55,0.0589,0.0905,35,451,20,427,0.072,0.6364,0.1294,0.2479,486
+50,hist_gradient_boosting,fixo_050,0.5,933,55,0.0589,0.1349,0,0,55,878,0.0,0.0,0.0,0.0,0
+50,hist_gradient_boosting,ajustado_validacao,0.05,933,55,0.0589,0.1349,27,217,28,661,0.1107,0.4909,0.1806,0.2909,244
+50,sem_alerta,regra_fixa,,933,55,0.0589,,0,0,55,878,0.0,0.0,0.0,0.0,0
+50,repetir_subida_anterior,regra_fixa,,933,55,0.0589,,7,49,48,829,0.125,0.1273,0.1261,0.1268,56
+100,regressao_logistica,fixo_050,0.5,933,26,0.0279,0.0543,8,141,18,766,0.0537,0.3077,0.0914,0.1581,149
+100,regressao_logistica,ajustado_validacao,0.7,933,26,0.0279,0.0543,3,50,23,857,0.0566,0.1154,0.0759,0.0955,53
+100,hist_gradient_boosting,fixo_050,0.5,933,26,0.0279,0.056,0,0,26,907,0.0,0.0,0.0,0.0,0
+100,hist_gradient_boosting,ajustado_validacao,0.05,933,26,0.0279,0.056,3,39,23,868,0.0714,0.1154,0.0882,0.1027,42
+100,sem_alerta,regra_fixa,,933,26,0.0279,,0,0,26,907,0.0,0.0,0.0,0.0,0
+100,repetir_subida_anterior,regra_fixa,,933,26,0.0279,,1,26,25,881,0.037,0.0385,0.0377,0.0382,27

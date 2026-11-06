@@ -1,0 +1,9 @@
+protocolo,cenario,n_treino,n_validacao,n_teste,inicio_teste,fim_teste
+fixo,A_todas,2953,557,221,2021-01-01,2023-06-16
+fixo,B_sem_pedras_grandes,2953,557,221,2021-01-01,2023-06-16
+fixo,C_sem_sao_ludgero,2953,557,221,2021-01-01,2023-06-16
+fixo,D_so_alvo,2953,557,221,2021-01-01,2023-06-16
+disponibilidade,A_todas,2953,557,221,2021-01-01,2023-06-16
+disponibilidade,B_sem_pedras_grandes,3792,581,311,2021-01-01,2023-06-19
+disponibilidade,C_sem_sao_ludgero,3113,557,223,2021-01-01,2023-06-16
+disponibilidade,D_so_alvo,22518,1550,933,2021-01-01,2023-11-18

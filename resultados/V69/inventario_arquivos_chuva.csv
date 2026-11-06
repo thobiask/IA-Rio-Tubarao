@@ -1,0 +1,5 @@
+arquivo,conteudo,bytes_descompactados,tipo
+Estacao_2849001_CSV_2026-10-23T19_02_30.699Z.zip,2849001_Chuvas.csv,543310,chuva CSV ANA (granularidade por verificar; não comprovada horária)
+Estacao_2849008_CSV_2026-10-23T19_02_48.084Z.zip,2849008_Chuvas.csv,504266,chuva CSV ANA (granularidade por verificar; não comprovada horária)
+Estacao_2849027_CSV_2026-10-23T18_58_25.105Z(1).zip,2849027_Chuvas.csv,195787,chuva CSV ANA (granularidade por verificar; não comprovada horária)
+Estacao_2849027_CSV_2026-10-23T18_58_25.105Z.zip,2849027_Chuvas.csv,195787,chuva CSV ANA (granularidade por verificar; não comprovada horária)

@@ -1,0 +1,13 @@
+limiar_subida_cm,modelo,regra,n,tp,fp,fn,tn,precisao,recall
+50,hist_gradient_boosting,ajustado_validacao,933,27,217,28,661,0.111,0.491
+50,hist_gradient_boosting,fixo_050,933,0,0,55,878,,0.000
+50,regressao_logistica,ajustado_validacao,933,35,451,20,427,0.072,0.636
+50,regressao_logistica,fixo_050,933,19,131,36,747,0.127,0.345
+50,repetir_subida_anterior,regra_fixa,933,7,49,48,829,0.125,0.127
+50,sem_alerta,regra_fixa,933,0,0,55,878,,0.000
+100,hist_gradient_boosting,ajustado_validacao,933,3,39,23,868,0.071,0.115
+100,hist_gradient_boosting,fixo_050,933,0,0,26,907,,0.000
+100,regressao_logistica,ajustado_validacao,933,3,50,23,857,0.057,0.115
+100,regressao_logistica,fixo_050,933,8,141,18,766,0.054,0.308
+100,repetir_subida_anterior,regra_fixa,933,1,26,25,881,0.037,0.038
+100,sem_alerta,regra_fixa,933,0,0,26,907,,0.000

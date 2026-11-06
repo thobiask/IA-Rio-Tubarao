@@ -30,27 +30,29 @@ As bases locais publicadas estão em:
 | **HistGradientBoosting (classificação)** | Comparar classificação não linear de subidas |
 | **Persistência** | Baseline sem aprendizado de máquina, usado para testar se a IA realmente agrega valor |
 
-Os modelos usam séries temporais históricas. Nos experimentos V71–V73, o recorte declarado é **treino até 2015, validação entre 2016 e 2020 e teste a partir de 2021**, limitado às datas elegíveis disponíveis. Essa separação temporal reduz comparações indevidas, mas não substitui a auditoria de disponibilidade real de cada dado.
+Os modelos usam séries temporais históricas. Nos experimentos de previsão e classificação, o recorte declarado é **treino até 2015, validação entre 2016 e 2020 e teste a partir de 2021**, limitado às datas elegíveis disponíveis. Essa separação temporal reduz comparações indevidas, mas não substitui a auditoria de disponibilidade real de cada dado.
 
-## 4. Evolução dos experimentos
+## 4. Etapas da pesquisa
 
-| Versão | Pergunta investigada | Arquivos |
+A pesquisa foi organizada por **problemas investigados**, e não pela numeração dos testes. O leitor pode consultar diretamente os materiais correspondentes:
+
+| Etapa | Pergunta investigada | Materiais |
 |---|---|---|
-| V69 | Quais dados faltam nos episódios críticos? | [Relatório](resultados/V69/RELATORIO_V69.md) · [Código](experimentos/V69/reproduzir_v69.py) |
-| V70 | Como auditar e buscar dados subdiários? | [Scripts](scripts/V70/) |
-| V71 | Excluir estações melhora a previsão? | [Relatório](resultados/V71/RELATORIO_V71.md) · [Código](experimentos/V71/) |
-| V72 | Como prever com medições auxiliares ausentes? | [Relatório](resultados/V72/RELATORIO_V72.md) · [Código](experimentos/V72/) |
-| V73 | É possível detectar subidas diárias relevantes? | [Método](experimentos/V73/LEIA_ME.md) · [Código](experimentos/V73/) · [Auditoria](documentacao/AUDITORIA_PREVISOES_V73.md) |
+| Diagnóstico das séries | Quais dados faltam nos episódios críticos? | [Relatório de cobertura](resultados/V69/RELATORIO_V69.md) · [Código](experimentos/V69/reproduzir_v69.py) |
+| Qualidade e aquisição | Como auditar dados e avaliar a necessidade de séries subdiárias? | [Rotinas de auditoria](scripts/V70/) |
+| Seleção de estações | Excluir estações melhora a previsão? | [Resultados](resultados/V71/RELATORIO_V71.md) · [Código](experimentos/V71/) |
+| Tratamento de dados ausentes | Como prever com medições auxiliares incompletas? | [Resultados](resultados/V72/RELATORIO_V72.md) · [Código](experimentos/V72/) |
+| Classificação de elevações | É possível identificar subidas diárias relevantes? | [Método](experimentos/V73/LEIA_ME.md) · [Código](experimentos/V73/) · [Auditoria](documentacao/AUDITORIA_PREVISOES_V73.md) |
 
-As versões V60–V68 integram o histórico metodológico, mas **não estão integralmente reproduzidas/documentadas neste repositório**. Ver [mapa de versões](documentacao/MAPA_VERSOES.md).
+A numeração interna das pastas é mantida apenas para **rastreabilidade dos arquivos e experimentos**, não como elemento central da apresentação acadêmica.
 
 ## 5. Resultados principais
 
-### Previsão de nível — V71
+### Previsão de nível com múltiplas estações
 
 Em **221 dias de teste com todas as estações disponíveis**, o Ridge multifonte apresentou **MAE de 21,075 cm**, frente a **25,448 cm** da persistência. Excluir Pedras Grandes ou São Ludgero piorou o MAE global nessa mesma coorte. **Não comparar diretamente MAEs de coortes com datas diferentes.** [Detalhes](resultados/V71/RELATORIO_V71.md).
 
-### Tratamento de faltantes — V72
+### Tratamento de medições ausentes
 
 A avaliação retrospectiva com histórico suficiente da estação-alvo passou de **221 para 933 dias**, ao permitir ausência das auxiliares. Nas **933 datas comuns**:
 
@@ -63,14 +65,14 @@ A avaliação retrospectiva com histórico suficiente da estação-alvo passou d
 
 O Ridge multifonte teve o menor RMSE, mas **não superou a persistência em MAE**. [Detalhes](resultados/V72/RELATORIO_V72.md).
 
-### Classificação de subidas — V73
+### Classificação de elevações diárias
 
 No teste com **933 dias**, ocorreram **55 subidas observadas de pelo menos 50 cm**. A regressão logística com limiar ajustado na validação identificou **35**, mas produziu **451 falsos positivos** (precisão de aproximadamente **7,2%**). Esse resultado é inadequado para declarar capacidade de alerta operacional. Uma subida de 50 cm **não equivale automaticamente a inundação**. [Auditoria](documentacao/AUDITORIA_PREVISOES_V73.md).
 
 ## 6. Como o professor pode examinar o trabalho?
 
 1. Ler este README para conhecer a pergunta, os algoritmos e as conclusões.
-2. Consultar os relatórios V71, V72 e a auditoria V73, com métricas e limitações.
+2. Consultar os relatórios de previsão, tratamento de dados ausentes e classificação, com métricas e limitações.
 3. Examinar os scripts históricos em [`experimentos/`](experimentos/) e as saídas em [`resultados/`](resultados/).
 4. Consultar a [auditoria de execução independente](documentacao/DIAGNOSTICO_EXECUCAO_INDEPENDENTE.md) antes de tentar reproduzir os modelos.
 

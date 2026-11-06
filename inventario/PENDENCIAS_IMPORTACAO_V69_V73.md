@@ -1,22 +1,15 @@
-# Estado de importação das previsões V69–V73
+# Importação V69–V73 — concluída
 
-**Conferência em 06/11/2026:** os cinco arquivos abaixo não constavam na comparação entre `main` e `revisao-inicial`. Os arquivos estão disponíveis no pacote `IA_Rio_Tubarao_pendentes_para_GitHub.zip` desta conversa.
+**Verificação remota:** os cinco arquivos abaixo foram confirmados na branch `revisao-inicial` após o envio pelo GitHub Desktop.
 
-| Arquivo | Bytes originais | Situação |
-|---|---:|---|
-| `experimentos/V69/reproduzir_v69.py` | 8455 | Pendente |
-| `resultados/V69/RELATORIO_V69.md` | 6022 | Pendente |
-| `resultados/V71/previsoes_pareadas_v71.csv` | 62370 | Pendente |
-| `resultados/V72/previsoes_v72.csv` | 292653 | Pendente |
-| `resultados/V73/previsoes_v73.csv` | 829326 | Pendente |
+| Arquivo | Publicação |
+|---|---|
+| `experimentos/V69/reproduzir_v69.py` | Confirmada |
+| `resultados/V69/RELATORIO_V69.md` | Confirmada |
+| `resultados/V71/previsoes_pareadas_v71.csv` | Confirmada |
+| `resultados/V72/previsoes_v72.csv` | Confirmada |
+| `resultados/V73/previsoes_v73.csv` | Confirmada |
 
-## Procedimento de importação
-1. No GitHub Desktop, conferir `Current branch: revisao-inicial` e clicar em `Fetch origin`.
-2. Abrir `Repository > Show in Explorer`.
-3. Extrair o **conteúdo interno** do ZIP diretamente na raiz da pasta `IA-Rio-Tubarao`, preservando `experimentos/` e `resultados/`. **Não** criar uma pasta adicional com o nome do ZIP.
-4. Conferir cinco arquivos novos na lista `Changes`. Se houver substituições ou conflitos, interromper e revisar antes de confirmar.
-5. Criar commit `dados: completar scripts e previsoes historicas V69-V73` e clicar `Push origin`.
-6. Verificar no GitHub que os cinco caminhos acima estão acessíveis na branch de revisão.
+A importação **não comprova** reexecução independente dos modelos. O README acadêmico resume o estado atual, os resultados e as limitações. Consulte `documentacao/DIAGNOSTICO_EXECUCAO_INDEPENDENTE.md` para os obstáculos de reprodução.
 
-## Limites da auditoria
-A publicação dos arquivos não comprova reprodutibilidade, disponibilidade dos dados no momento de previsão ou eficácia operacional. É necessário verificar integridade (hashes), executar scripts com ambiente registrado e auditar os eventos críticos.
+**Pendências remanescentes:** auditoria de integridade e procedência, disponibilidade temporal dos dados, dependências exatas e reprodução em ambiente limpo.

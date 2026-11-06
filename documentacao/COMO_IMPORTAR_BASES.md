@@ -1,25 +1,14 @@
-# Importação dos dados hidrológicos pendentes
+# Registro de importação das bases
 
-**Situação:** o GitHub contém documentação, códigos e métricas; as oito bases hidrológicas grandes ainda precisam ser transferidas.
+As oito bases hidrológicas inventariadas foram **enviadas e confirmadas como presentes** na branch `revisao-inicial`. Não é necessário repetir a importação.
 
-## Pacotes disponíveis na conversa
-- `IA_Rio_Tubarao_GitHub_organizado.zip`: scripts, resultados, documentação, inventário e cópias dos CSVs.
-- `IA_Rio_Tubarao_bases_hidrologicas_8_arquivos.zip`: oito bases CSV em `dados/chuva/` e `dados/processados/`.
-- `Enviar_IA_Rio_Tubarao_GitHub.ps1`: importador Windows que preserva arquivos existentes, compara SHA-256 e envia apenas os ausentes à branch `revisao-inicial`.
+O inventário com os nomes, tamanhos e hashes locais informados está em [`inventario/BASES_HIDROLOGICAS_PENDENTES.md`](../inventario/BASES_HIDROLOGICAS_PENDENTES.md). O nome histórico desse documento foi mantido para preservar links existentes, embora a importação já esteja concluída.
 
-## Como executar no Windows
-1. Baixar os dois ZIPs e o script PowerShell da conversa para a pasta **Downloads**, sem renomeá-los.
-2. Clonar `thobiask/IA-Rio-Tubarao` pelo GitHub Desktop; abrir a branch `revisao-inicial`.
-3. Abrir PowerShell na pasta Downloads e executar:
+## Verificações ainda necessárias
 
-```powershell
-powershell -ExecutionPolicy Bypass -File .\Enviar_IA_Rio_Tubarao_GitHub.ps1 -RepositorioLocal "C:\CAMINHO\IA-Rio-Tubarao"
-```
+1. Comparar os SHA-256 dos arquivos publicados com os hashes registrados anteriormente.
+2. Conferir codificação, separadores, colunas e contagens de registros.
+3. Validar proveniência, metadados das estações e condições de redistribuição.
+4. Manter os arquivos originais imutáveis durante a reprodução dos experimentos.
 
-4. Confirmar o resultado no Pull Request #1.
-
-O importador não sobrescreve arquivos diferentes que já existam no repositório, não faz merge e não altera `main`. Arquivos divergentes são listados para revisão posterior. Antes de publicar fora do repositório privado, auditar procedência e termos de redistribuição.
-
-**Nota de integridade:** o inventário em `inventario/BASES_HIDROLOGICAS_PENDENTES.md` contém os hashes SHA-256 esperados das oito bases. Após o envio, conferir cada arquivo contra esses valores.
-
-**Limitação:** o acesso automatizado usado nesta conversa permite editar arquivos de texto no GitHub, mas não tem acesso direto aos bytes dos ZIPs locais. Este procedimento é a etapa necessária para importar os dados completos, sem alegar que já estejam no GitHub.
+Esta página registra uma etapa concluída, não um procedimento de envio ainda pendente.

@@ -1,8 +1,8 @@
-# Inventário das oito bases hidrológicas locais
+# Inventário das bases hidrológicas publicadas
 
-**Situação em 30/10/2026:** arquivos presentes no pacote local, mas **NÃO enviados ao GitHub**. Este manifesto registra os arquivos que precisam ser transferidos. O fato de constarem aqui não significa que estejam publicados.
+**Estado em 06/11/2026:** os oito arquivos abaixo estão presentes na branch `revisao-inicial`. Os valores de tamanho, linhas e SHA-256 foram registrados no inventário local anterior ao envio e **ainda não foram confrontados byte a byte com os arquivos remotos**.
 
-| Caminho relativo | Tamanho (bytes) | Linhas de dados* | SHA-256 |
+| Caminho relativo | Tamanho local (bytes) | Linhas locais* | SHA-256 local informado |
 |---|---:|---:|---|
 | `dados/chuva/chuva_tubarao_02849027_acumulados.csv` | 1757082 | 14335 | `9ca549c7108fed36bcc810c8f84a8208bd1de9504f4e5ba1fe0a15725c3b5223` |
 | `dados/chuva/chuvas_orleans_braco_norte_tubarao_24h_48h_72h.csv` | 3195046 | 31716 | `c6c913715ff3c50cb9f132799cd55db258f07a028b48c2aff22f04dde58119b6` |
@@ -13,12 +13,6 @@
 | `dados/processados/dados_hidrologicos_com_chuva_tubarao.csv` | 53961586 | 140103 | `b46c798761c7ea3fc38e3aa6cf72c193186276403e47ba9c272452edeb4f1ffd` |
 | `dados/processados/dados_hidrologicos_ia.csv` | 30165942 | 140103 | `7895a93a7be7ece9598b5197e8adf27afa555ef38aa27471df487b588e2cced9` |
 
-*Linhas contadas por quebra de linha menos o cabeçalho. O total de linhas não equivale a quantidade de observações válidas.
+*Contagens históricas de linhas, não necessariamente observações válidas.
 
-## Conteúdo identificado
-As bases processadas incluem campos como `data`, `estacao_codigo`, `nivel_cm`, `nivel_m`, `vazao_m3_s`, indicadores de qualidade, e, conforme o arquivo, chuva diária e acumulada de 24/48/72 horas.
-
-## Próxima ação
-Transferir os oito arquivos, preservando os nomes e caminhos. Depois conferir os SHA-256 da versão recebida e auditar a origem e os termos de redistribuição. Nenhum dado bruto novo foi coletado nesta etapa.
-
-**Importante:** repositório privado não substitui auditoria de licenças, qualidade e disponibilidade temporal das medições.
+**Pendente:** calcular SHA-256 dos arquivos efetivamente recebidos, conferir procedência, licenças e metadados. A publicação no GitHub não substitui essas verificações.
